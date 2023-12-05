@@ -35,4 +35,85 @@
     margin-left: 20px;
   }
 
+  .signup {
+    margin-left: auto;
+  }
     
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscribe,
+  .social {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+/* When you have flex-direction: row, justify-content aligns the items horizontally in its parent container.
+But, when you change flex-direction to column, justify-content now orients items vertically within its parent
+container and in order to change the alignment left/right, you need to use align-items, which normally refers
+to the items vertical alignment. Things flip flop depending on flex-direction. */
+
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;   */
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .photo-grid-item {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .first-item {
+    order: 1;
+  }
+
+  .last-item {
+    order: -1;
+  }
+
+  .footer{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .footer-item {
+    border: 1px solid black;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  /* .footer-two {
+      flex:2;
+    } */
+
+  .footer-one,
+  .footer-three {
+    width: 300px;
+    background-color: #5995DA;
+    flex: initial;
+  }
+  
+
