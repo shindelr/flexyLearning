@@ -14,8 +14,7 @@
   }
   
   .menu {
-    /* I am also a container holding: date, signup, login */
-    border: 1px solid #fff;  /* For debugging */
+    /* I am also a container holding: date, links which holds: signup, login */
     width: 900px;
     /* Give me flex control over my items */
     display: flex;
@@ -25,9 +24,15 @@
     /* Space-between adds only space between items. */
   }
 
+    /* Errything can be a container if it contains something */
+    /* Contains: signup, login */
   .links {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .login {
+    margin-left: 20px;
   }
 
     
